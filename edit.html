@@ -248,6 +248,46 @@ body{background:var(--bg);min-height:100vh}
   body{background:#fff}
   .topbar-cta,.cta-primary{display:none}
 }
+
+/* ── proof-led concept cards ────────────────────────────────────── */
+.scale-label{display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;
+  letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px}
+.prec{margin-top:0.85rem;padding:0.95rem 1rem 0.85rem;border:1px solid var(--border);
+  border-radius:8px;background:var(--bg)}
+.prec-label{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--txt3);margin-bottom:0.7rem}
+.prec-spec{margin:0 0 0.9rem;display:grid;grid-template-columns:auto 1fr;gap:0.35rem 0.9rem}
+.prec-spec dt{font-family:'Oswald',sans-serif;font-size:10.5px;font-weight:500;letter-spacing:0.07em;
+  text-transform:uppercase;color:var(--txt3);white-space:nowrap;padding-top:2px}
+.prec-spec dd{margin:0;font-size:13px;color:var(--txt2);line-height:1.6}
+.proj-video-embed{position:relative;width:100%;aspect-ratio:16/9;background:#141414;
+  border-radius:8px;overflow:hidden;margin-bottom:0.85rem}
+.proj-video-embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.video-facade{cursor:pointer}
+.vf-thumb{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block}
+.vf-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:58px;height:40px;
+  border-radius:9px;background:rgba(20,20,20,0.82);display:block}
+.vf-play:after{content:"";position:absolute;top:50%;left:52%;transform:translate(-50%,-50%);
+  border-style:solid;border-width:8px 0 8px 14px;border-color:transparent transparent transparent #fff}
+.video-facade:hover .vf-play{background:var(--o)}
+.vf-title{position:absolute;left:0;right:0;bottom:0;padding:0.5rem 0.7rem;font-size:11px;
+  font-family:'Oswald',sans-serif;letter-spacing:0.05em;text-transform:uppercase;color:#fff;
+  background:linear-gradient(to top,rgba(0,0,0,0.78),rgba(0,0,0,0))}
+.stat-strip-sm{margin:0 0 0.75rem!important}
+.stat-strip-sm .stat-num{font-size:26px}
+.stat-strip-sm .stat-cell{padding:0.65rem 0.5rem}
+.prec-note{margin:0;font-size:12px;color:var(--txt3);line-height:1.65}
+.prec-note a{color:var(--o);text-decoration:none;border-bottom:1px solid rgba(232,90,12,0.35)}
+.apply{margin-top:1rem;padding-left:0.95rem;border-left:2px solid var(--o)}
+.apply-label{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--o);margin-bottom:0.42rem}
+.apply p{margin:0 0 0.45rem;font-size:13.5px;color:var(--txt2);line-height:1.7}
+.apply p:last-child{margin-bottom:0}
+.apply-names{font-size:12.5px!important;color:var(--txt3)!important}
+.apply-names strong{color:var(--txt);font-weight:500}
+@media(max-width:640px){.prec-spec{grid-template-columns:1fr;gap:0.15rem}
+  .prec-spec dt{padding-top:6px}}
+
 </style>
 </head>
 <body>
@@ -624,7 +664,7 @@ body{background:var(--bg);min-height:100vh}
       <span class="section-eyebrow">Three Concepts For American Humane Society</span>
     </div>
     <h2 class="section-title">Three Opportunities to Grow Your Audience</h2>
-    <p class="section-subtitle">One flagship series, one short taco drama, and one fast way to use the footage you already have. We film and produce at every level, so where you start is up to you.</p>
+    <p class="section-subtitle">One flagship documentary series and one shorter format. Each one names the format, the show it borrows from, and a company that has already made it work. We film and produce at every level, so where you start is up to you.</p>
   </div>
 
   <div class="ideas-grid">
@@ -632,9 +672,10 @@ body{background:var(--bg);min-height:100vh}
     <div class="idea-card idea-card-featured">
       <div class="idea-num">01</div>
       <div class="idea-body">
-        <div style="display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px">Long-Form Episodic · Flagship, ongoing</div>
-        <div class="idea-title">"Nominated"</div>
-        <div class="idea-desc">Every year the public writes in to tell you about a dog. Twenty-five dogs are named semifinalists across five categories, the public votes the field down to five finalists, and a blue-ribbon panel picks the winner. Last November that winner was a dog named Sgt. Bo, announced on NBC's TODAY Show, and the Hero Dog Awards have run for sixteen years. Those nominations come from people whose lives changed because of a dog.<br/><br/><em>Nominated</em> is a documentary series built on those stories, one nominee per episode. The person who sent the nomination is the protagonist, the dog co-stars, and American Humane Society is the guide behind the camera. The 2026 semifinalists are already on your YouTube channel as clips under seventy seconds each, and the series takes those same stories and gives them room to breathe.<br/><br/>You meet the person first, in the life the dog walked into. You watch what an ordinary day looks like now because of that dog, and you're there when the finalists are announced and one of the nominees gets the news.<br/><br/><em>Drive to Survive (the Netflix series that turned Formula 1 into a story about the drivers instead of the cars)</em> made millions of people care who won on Sunday. Viewers cared because they had spent the week with the drivers themselves. <em>Nominated</em> works on a vote you already run. When a viewer has spent an episode with a nominee, the once-a-day vote changes, and your community gets a person and a dog to pull for all season long.</div>
+        <div class="scale-label">Long-Form Episodic &middot; Flagship, ongoing</div>
+        <div class="idea-title">A returning documentary series</div>
+        <div class="prec"><div class="prec-label">The format, and a company that has already run it</div><dl class="prec-spec"><dt>Format</dt><dd>Docuseries. One real person an episode, telling their own story, stayed with long enough that a stranger cares how it turns out.</dd><dt>Entertainment reference</dt><dd><em>Drive to Survive</em> (the Netflix series that turned Formula 1 into a story about the drivers instead of the cars)</dd><dt>A company that did it</dt><dd>YETI, <em>YETI Presents</em>. A cooler company built a library of short documentaries about the people who use its gear, each film about one person and one story from their life, and never about the product.</dd><dt>Episode length</dt><dd>A median of about 8 minutes, with the most watched film running 28 minutes</dd></dl><div class="proj-video-embed video-facade" data-yt="OmrufRLGdAk" role="button" tabindex="0" aria-label="Play video: YETI Presents, A Thousand Casts"><img class="vf-thumb" src="https://i.ytimg.com/vi/OmrufRLGdAk/hqdefault.jpg" alt="" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">A Thousand Casts &middot; YETI Presents</span></div><div class="stat-strip stat-strip-sm"><div class="stat-cell"><div class="stat-num">1,344,426</div><div class="stat-label">Views On The Top Film</div></div><div class="stat-cell"><div class="stat-num">90</div><div class="stat-label">Films In The Library</div></div><div class="stat-cell"><div class="stat-num">37.6M</div><div class="stat-label">Views Across The Library</div></div></div><p class="prec-note">YETI has published 90 of these films. The one above runs 28 minutes and is the most watched of all of them. Runtime and view count read from YouTube on 24 August 2026. <a href="https://www.youtube.com/watch?v=OmrufRLGdAk" target="_blank" rel="noopener">Watch the film</a></p></div>
+        <div class="apply"><div class="apply-label">How American Humane Society could use it</div><p>One nominee an episode: the person who sent the nomination is the protagonist, and the dog is alongside them. The 2026 semifinalist clips on your channel run under seventy seconds each. A season of full episodes lets each nominee's story play out and ends with the November announcement.</p><p class="apply-names">Possible names: <strong>Nominated</strong>, <strong>The Ones Who Wrote In</strong>, <strong>Before The Vote</strong></p></div>
         <div class="why-block">
           <div class="why-label">Why long-form episodic wins over time</div>
           <div class="why-list">
@@ -649,32 +690,16 @@ body{background:var(--bg);min-height:100vh}
     <div class="idea-card">
       <div class="idea-num">02</div>
       <div class="idea-body">
-        <div style="display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px">Short-Form Episodic · The Taco Drama</div>
-        <div class="idea-title">"Vote Once a Day"</div>
-        <div class="idea-desc">The whiteboard in the Washington DC office says 21 DAYS TO FINALISTS. A sponsor is holding on line one. A film production is on line two, asking whether four hundred goldfish need a representative on set. The summer sweepstakes winner needs her trip to Cancún booked by Friday.<br/><br/>A <em>'Taco Drama'</em> is a short scripted series designed to be easy to consume on the go. <em>Vote Once a Day</em> is a workplace comedy set in the Washington DC headquarters of a national animal welfare organization during awards season. Episodes run a minute or two, shot vertical for phones and widescreen for YouTube and your website.<br/><br/>The cast is four people. Dana runs the awards and answers every question with how many days are left. Marcus handles the sponsors and has not managed to end a call without offering to send someone a photo of a dog. Priya takes the calls from film and television productions and answers the strangest ones in the same even voice. And Theo is the new hire who took the job because he loves dogs. He is still waiting for the part of the day where he gets to pet a dog.<br/><br/>Every episode, everything rings at once and the countdown loses a day, and every episode the team lands all of it anyway. The next morning the vote reopens, the productions call again, and there is one day fewer on the whiteboard.<br/><br/><em>Parks and Recreation (the NBC comedy about a small town parks department)</em> made people love a local government office by letting characters who care too much take tiny stakes seriously. <em>Abbott Elementary (the ABC comedy about teachers keeping an underfunded school running)</em> does the same for people doing good work with too little time. <em>Vote Once a Day</em> gives your community a minute or two with the small team that runs the awards, and something worth passing along.</div>
+        <div class="scale-label">Short-Form Episodic &middot; Scripted comedy, under 2 minutes</div>
+        <div class="idea-title">A short scripted comedy</div>
+        <div class="prec"><div class="prec-label">The format, and a company that has already run it</div><dl class="prec-spec"><dt>Format</dt><dd>Sitcom. A fixed cast in one workplace, one problem an episode, resolved by the end of it. A 'Taco Drama' is a short scripted series designed to be easy to consume on the go.</dd><dt>Entertainment reference</dt><dd><em>Abbott Elementary</em> (the comedy set in a Philadelphia public school) and <em>Superstore</em> (the sitcom where a store's staff face one absurd situation a week and everything resets by the next episode)</dd><dt>A company that did it</dt><dd>Albertsons with Procter &amp; Gamble, <em>Rico's Tacos</em>. A scripted series written for a phone screen and for the display above the checkout, running on channels the company owns.</dd><dt>Episode length</dt><dd>1 minute 10 seconds for the first episode</dd></dl><div class="proj-video-embed video-facade" data-yt="PeUsXJ4ccXY" role="button" tabindex="0" aria-label="Play video: Rico's Tacos Episode 1, Flavor Has a Price"><img class="vf-thumb" src="https://i.ytimg.com/vi/PeUsXJ4ccXY/hqdefault.jpg" alt="" onerror="this.style.display='none'"><span class="vf-play" aria-hidden="true"></span><span class="vf-title">Episode 1, Flavor Has a Price &middot; Rico's Tacos</span></div><div class="stat-strip stat-strip-sm"><div class="stat-cell"><div class="stat-num">200,363</div><div class="stat-label">Views, Episode One</div></div><div class="stat-cell"><div class="stat-num">940K</div><div class="stat-label">Views, All Episodes</div></div><div class="stat-cell"><div class="stat-num">17 of 22</div><div class="stat-label">Episodes Out So Far</div></div></div><p class="prec-note">Albertsons runs it on YouTube, on social, and on the screens inside its stores, and the app lets you buy what you just watched. For a longer-form comparison, the accounting software company FloQast makes <em>PBC</em>, a scripted workplace comedy about auditors whose first episode runs 22 minutes and has 213,014 views. Counts read from YouTube on 24 August 2026. <a href="https://www.youtube.com/watch?v=PeUsXJ4ccXY" target="_blank" rel="noopener">Rico's Tacos</a> &middot; <a href="https://www.youtube.com/playlist?list=PLp0NhJVOmekheBEcUibmqdlj0RIT2J4vr" target="_blank" rel="noopener">FloQast PBC</a></p></div>
+        <div class="apply"><div class="apply-label">How American Humane Society could use it</div><p>The same format runs in your Washington DC office during awards season: four people, everything ringing at once, and the countdown losing a day an episode. The team lands everything anyway, and nothing in the show ever comes at the expense of an animal.</p><p class="apply-names">Possible names: <strong>The Countdown</strong>, <strong>21 Days To Finalists</strong>, <strong>Awards Season</strong></p></div>
         <div class="why-block">
           <div class="why-label">Why short-form drama is worth the bet</div>
           <div class="why-list">
             <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></span><span><strong>Entertainment is value given first.</strong> Nobody shares an ad, but people share a short show that made them smile.</span></div>
             <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><span>Trust builds in <strong>small moments repeated over time</strong>, and a taco drama episode is the smallest repeatable moment there is.</span></div>
             <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span><span><strong>The world resets every episode.</strong> There is always another sponsor call, another question from a production, and another day of voting, so the show never runs out of stories.</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="idea-card">
-      <div class="idea-num">03</div>
-      <div class="idea-body">
-        <div style="display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px">From Footage You Already Have · fast</div>
-        <div class="idea-title">"The Recut"</div>
-        <div class="idea-desc">A handler kneels down, and the military working dog he served beside comes to him. Your Military Working Dog Reunifications playlist holds seventeen films of that moment, inside a channel of 492 videos and 14.7 million lifetime views. The same channel holds 83 videos from the Global Humane Conservation Fund of Africa, 22 from Red Star disaster response, and Hero Dog Awards footage going back to 2012.<br/><br/><em>The Recut</em> needs no new shoot. We take the footage you already own and recut it into short vertical clips built for Instagram, YouTube Shorts, and TikTok.<br/><br/>The most-liked video in the channel's history is 56 seconds long, a talking dog from 2012 with nearly 15,000 likes. <em>The Recut</em> takes the strongest moments in the library, the reunions, the disaster responses, the penguin releases, and cuts them to that length.<br/><br/>Someone scrolling who has never heard of American Humane Society watches a dog find her handler again, and wants to know who made that happen.</div>
-        <div class="why-block">
-          <div class="why-label">Why this is the fastest place to start</div>
-          <div class="why-list">
-            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg></span><span><strong>The footage already exists.</strong> 492 videos across 39 playlists are on your channel now, so there is no shoot to schedule.</span></div>
-            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><span><strong>The channel's most-liked video is 56 seconds long.</strong> A talking dog from 2012, with nearly 15,000 likes.</span></div>
-            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><span><strong>A single reunification cuts into three or four vertical clips</strong>, ready to post.</span></div>
           </div>
         </div>
       </div>
@@ -923,20 +948,54 @@ window.addEventListener("load", function(){
 });
 </script>
 
+
+<script>
+(function(){
+  function load(el){
+    if(el.getAttribute("data-loaded")) return;
+    var id = el.getAttribute("data-yt");
+    var f = document.createElement("iframe");
+    f.setAttribute("src","https://www.youtube-nocookie.com/embed/"+id+"?autoplay=1&rel=0");
+    f.setAttribute("title","Video player");
+    f.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+    f.setAttribute("allowfullscreen","");
+    el.innerHTML = ""; el.appendChild(f); el.setAttribute("data-loaded","1");
+  }
+  document.querySelectorAll(".video-facade").forEach(function(el){
+    el.addEventListener("click", function(){ load(el); });
+    el.addEventListener("keydown", function(ev){
+      if(ev.key === "Enter" || ev.key === " "){ ev.preventDefault(); load(el); }
+    });
+  });
+})();
+</script>
 <script id="tm-edit-js">
 
 (function(){
-  var DOC_KEY = 'american-humane-f194620f';
-  var LOCAL_KEY = 'talex-edit:' + DOC_KEY;
+  var DOC_KEY = 'american-humane-v2-51fb23a8';
+  var BUILD_ID = '1034dc0569e4';
+  // The browser-local draft is keyed to the BUILD, not just the doc. When a doc is
+  // rebuilt and redeployed under the same doc key, an old localStorage draft would
+  // otherwise repaint itself over the new page a moment after load, which looks
+  // exactly like the deploy having failed. Keying on the build makes a stale draft
+  // unreachable, and any draft from a previous build is cleared on load.
+  var LOCAL_KEY = 'talex-edit:' + DOC_KEY + ':' + BUILD_ID;
+  try {
+    for (var i = localStorage.length - 1; i >= 0; i--) {
+      var k = localStorage.key(i);
+      if (k && k.indexOf('talex-edit:' + DOC_KEY) === 0 && k !== LOCAL_KEY) {
+        localStorage.removeItem(k);
+      }
+    }
+  } catch(e){}
   // Carousel decks (tools/deck-unbundle.mjs) carry their text in inline-styled
   // spans inside .slide sections, so the tag list below would miss most of a
   // deck. Scoped to .slide so a bare span stays uneditable in strategy docs.
-  var EDIT_SEL = '.slide span, .slide em, p, li, h1, h2, h3, h4, .idea-title, .idea-desc, .idea-tag, .why-label, .why-item, .stat-num, .stat-label, .channel-name, .channel-handle, .channel-snippet, .cs-section-label, .cs-section-body, .cs-stat-num, .cs-stat-label, .cs-name, .cs-footer-meta, .cred-chip, .faq-q, .faq-a, .cta-eyebrow, .cta-headline, .cta-sub, .cta-reply, .callout p, .callout-attr, .hero-eyebrow, .hero-title, .hero-tagline, .section-title, .section-subtitle';
+  var EDIT_SEL = '.scale-label, .prec-spec dd, .apply-label, .slide span, .slide em, p, li, h1, h2, h3, h4, .idea-title, .idea-desc, .idea-tag, .why-label, .why-item, .stat-num, .stat-label, .channel-name, .channel-handle, .channel-snippet, .cs-section-label, .cs-section-body, .cs-stat-num, .cs-stat-label, .cs-name, .cs-footer-meta, .cred-chip, .faq-q, .faq-a, .cta-eyebrow, .cta-headline, .cta-sub, .cta-reply, .callout p, .callout-attr, .hero-eyebrow, .hero-title, .hero-tagline, .section-title, .section-subtitle';
   var wrap = document.querySelector('#wrap');
   var statusEl = document.getElementById('tm-status');
   var saveTimer = null;
   window.__talexDocKey = DOC_KEY;
-  var BUILD_ID = 'f5d9f3596b44';
   window.__tmSkipSave = false;
 
   function setStatus(text, cls){
@@ -1103,7 +1162,7 @@ window.addEventListener("load", function(){
     var blob = new Blob([html], {type:'text/html'});
     var a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'american-humane-strategy-FINAL.html';
+    a.download = 'american-humane-v2-strategy-FINAL.html';
     document.body.appendChild(a);
     a.click();
     setTimeout(function(){ a.remove(); URL.revokeObjectURL(a.href); }, 500);
